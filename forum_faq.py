@@ -62,6 +62,8 @@ class FaqGenerator(object):
             # Create list of FAQs
             if len(tmp_list) > 1:
                 faq_list.append(tmp_list)
+        # Sort sub-list by list size/length
+        faq_list.sort(key = len, reverse=True)
         return faq_list
 
     
